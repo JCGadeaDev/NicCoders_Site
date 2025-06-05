@@ -4,22 +4,26 @@ import {
   Sheet,
   SheetContent,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import useScrollSpy from "@/app/hooks/useScrollSpy";
 
 const links = [
   { name: "home", path: "/" },
-  { name: "about", path: "/about" },
-  { name: "services", path: "/services" },
-  { name: "pages", path: "/pages" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
+  { name: "about", path: "#about-section" },
+  { name: "services", path: "#services-section" },
+  // { name: "pages", path: "/pages" },
+  // { name: "work", path: "/work" },
+  { name: "contact", path: "#contact-section" },
 ];
 
 const MobileNav = () => {
   const pathname = usePathname();
+  const activeSection = useScrollSpy(["about-section", "services-section", "contact-section"]);
+
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
@@ -36,20 +40,31 @@ const MobileNav = () => {
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
-          {links.map((link, index) => {
-            return (
-              <Link
-                href={link.path}
-                key={index}
-                className={`${
-                  link.path === pathname &&
-                  "text-accent border-b-2 border-accent"
-                }text-xl capitalize hover:text-accent transition-all`}
-              >
-                {link.name}
-              </Link>
-            );
-          })}
+          {links.map((link, index) =>
+            link.path.startsWith("#") ? (
+              <SheetClose asChild key={index}>
+                <a
+                  href={link.path}
+                  className={`text-xl capitalize transition-all hover:text-accent ${
+                    link.path === `#${activeSection}` ? "text-accent" : "text-white"
+                  }`}
+                >
+                  {link.name}
+                </a>
+              </SheetClose>
+            ) : (
+              <SheetClose asChild key={index}>
+                <Link
+                  href={link.path}
+                  className={`text-xl capitalize hover:text-accent transition-all ${
+                    pathname === link.path ? "text-accent border-b-2 border-accent" : ""
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              </SheetClose>
+            )
+          )}
         </nav>
       </SheetContent>
     </Sheet>

@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-primary via-[#1f1f28] to-primary border-t border-accent py-10 text-white w-full">
+    <footer className="bg-gradient-to-r from-primary via-[#1f1f28] to-primary border-t border-accent py-10 text-white w-full" id="contact-section">
       <div className="container mx-auto space-y-8 px-4 flex flex-col items-center">
         {/* Top section: logo, social icons, description */}
         <div className="flex flex-col items-center space-y-4 text-center">
