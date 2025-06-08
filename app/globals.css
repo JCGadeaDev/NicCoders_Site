@@ -17,8 +17,12 @@
   }
   .text-outline{
   -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover{
+    -webkit-text-stroke: 1px #c9e400;
+  }
 }
-.text-outline-hover{
-  -webkit-text-stroke: 1px #c9e400;
-}
+
+html {
+  scroll-behavior: smooth;
 }

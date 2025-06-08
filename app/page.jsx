@@ -42,7 +42,7 @@ const HomePage = () => {
               custom software development to boost your business growth.
             </p>
             <div className="flex justify-center xl:justify-start">
-              <Link href="/about">
+              <a href="#about-section">
                 <Button
                   variant="outline"
                   size="lg"
@@ -51,7 +51,18 @@ const HomePage = () => {
                   <span>About Us</span>
                   <FaArrowRight className="text-xl" />
                 </Button>
-              </Link>
+              </a>
+
+              {/* <Link href="/about">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>About Us</span>
+                  <FaArrowRight className="text-xl" />
+                </Button>
+              </Link> */}
             </div>
           </div>
 
@@ -71,7 +82,7 @@ const HomePage = () => {
       </section>
 
       {/* About Us Section */}
-      <section id="about-section" className="py-16 container">
+      <section id="about-section" className="py-16 container pt-20">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
           Who We Are
         </h1>
@@ -80,7 +91,7 @@ const HomePage = () => {
             <h2 className="text-2xl font-semibold text-accent mb-2">Mission</h2>
             <p className="text-white/80 mb-4">
               Facilitate digital transformation by developing innovative,
-              high-quality software solutions tailored to clients' unique needs.
+              high-quality software solutions tailored to clients&apos; unique needs.
               We are committed to delivering services and products that drive
               efficiency, productivity, and business success while upholding the
               highest standards of ethics and professionalism.
@@ -116,9 +127,11 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Collaboration Card */}
           <div className="bg-[#1c1c22] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition">
-            <img
+            <Image
               src="/assets/collaboration.png"
               alt="Collaboration"
+              width={100}
+              height={100}
               className="w-28 h-28 mb-4"
             />
             <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2">
@@ -131,9 +144,11 @@ const HomePage = () => {
 
           {/* Innovation Card */}
           <div className="bg-[#1c1c22] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition">
-            <img
+            <Image
               src="/assets/innovation.png"
               alt="Innovation"
+              width={100}
+              height={100}
               className="w-28 h-28 mb-4"
             />
             <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2">
@@ -147,9 +162,11 @@ const HomePage = () => {
 
           {/* Integrity Card */}
           <div className="bg-[#1c1c22] rounded-lg shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition">
-            <img
+            <Image
               src="/assets/integrity.png"
               alt="Integrity"
+              width={100}
+              height={100}
               className="w-28 h-28 mb-4"
             />
             <h3 className="text-xl font-semibold text-accent mb-2 flex items-center gap-2">
@@ -162,7 +179,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section id="services-section" className="py-16 container">
+      <section id="services-section" className="py-16 container pt-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
           Our Services
         </h2>
@@ -235,7 +252,7 @@ const HomePage = () => {
         </div>
 
         {/* Button centered */}
-        <div className="flex justify-center mt-8">
+        {/* <div className="flex justify-center mt-8">
           <Link href="/services">
             <Button
               variant="outline"
@@ -246,7 +263,7 @@ const HomePage = () => {
               <FaArrowRight className="text-xl" />
             </Button>
           </Link>
-        </div>
+        </div> */}
       </section>
 
       {/* Why Work With Us Section */}
@@ -329,7 +346,7 @@ const HomePage = () => {
           </div>
 
           <div className="flex justify-center mt-10">
-            <Link href="/work">
+            {/* <Link href="/work">
               <Button
                 variant="outline"
                 size="lg"
@@ -338,7 +355,7 @@ const HomePage = () => {
                 <span>See Our Work</span>
                 <FaArrowRight className="text-xl" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
