@@ -38,24 +38,26 @@ const Footer = () => {
         {/* Middle: Services, Contact, Legal */}
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-sm text-white/70 text-center md:text-left">
           {/* Our Services */}
-          <div>
-            <h4 className="font-semibold text-white mb-2">Our Services</h4>
-            <ul className="list-disc list-inside space-y-1">
+          <div className="px-4 sm:px-6 md:px-0 max-w-md mx-auto">
+            <h4 className="font-semibold text-white mb-3 text-lg sm:text-xl">Our Services</h4>
+            <ul className="list-disc list-inside space-y-2">
               <li>Web App Development</li>
               <li>Mobile App Development</li>
+              <li>Outsourcing Partner</li>
               <li>User Experience Design (UX)</li>
+              <li>Custom Software Development</li>
               <li>Desktop App Development</li>
             </ul>
           </div>
 
           {/* Contact Us */}
-          <div>
-            <h4 className="font-semibold text-white mb-2">Contact Us</h4>
+          <div className='px-4 sm:px-6 md:px-0 max-w-md mx-auto'>
+            <h4 className="font-semibold text-white mb-3 text-lg sm:text-xl">Contact Us</h4>
             <p className="flex items-center gap-2 mb-2 justify-center md:justify-start">
               <FaMapMarkerAlt /> Managua, Nicaragua
             </p>
             <p className="flex items-center gap-2 mb-2 justify-center md:justify-start">
-              <FaPhoneAlt /> Phone: 86750885
+              <FaPhoneAlt /> Phone: (+505)86604980
             </p>
             <p className="flex items-center gap-2 justify-center md:justify-start">
               <FaEnvelope /> contact@niccoders.com
@@ -64,7 +66,7 @@ const Footer = () => {
 
           {/* Legal */}
           <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-semibold text-white mb-2">Legal</h4>
+            <h4 className="font-semibold text-white mb-3 text-lg sm:text-xl">Legal</h4>
             <p>Privacy Policy</p>
             <p>Terms & Conditions</p>
           </div>
@@ -72,7 +74,7 @@ const Footer = () => {
 
         {/* Divider and bottom line */}
         <div className="w-full border-t border-accent pt-4 text-sm text-white/70 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2025 NicCoders</p>
+          <p>©2025 NicCoders</p>
           <p>All rights reserved</p>
         </div>
       </div>
