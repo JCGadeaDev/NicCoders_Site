@@ -21,7 +21,9 @@ import {
   FaUsers,
 } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+
 import Footer from "@/components/Footer";
+import ContactForm from "./contact/page";
 
 const HomePage = () => {
   return (
@@ -91,10 +93,10 @@ const HomePage = () => {
             <h2 className="text-2xl font-semibold text-accent mb-2">Mission</h2>
             <p className="text-white/80 mb-4">
               Facilitate digital transformation by developing innovative,
-              high-quality software solutions tailored to clients&apos; unique needs.
-              We are committed to delivering services and products that drive
-              efficiency, productivity, and business success while upholding the
-              highest standards of ethics and professionalism.
+              high-quality software solutions tailored to clients&apos; unique
+              needs. We are committed to delivering services and products that
+              drive efficiency, productivity, and business success while
+              upholding the highest standards of ethics and professionalism.
             </p>
             <h2 className="text-2xl font-semibold text-accent mb-2">Vision</h2>
             <p className="text-white/80">
@@ -191,7 +193,9 @@ const HomePage = () => {
               Web App Development
             </h3>
             <p className="text-white/80">
-              Custom solutions for your business challenges.
+              We build high-performance, responsive, and scalable web
+              applications tailored to your business goals. We deliver clean,
+              maintainable code and a seamless user experience.
             </p>
           </div>
 
@@ -202,18 +206,23 @@ const HomePage = () => {
               Mobile App Development
             </h3>
             <p className="text-white/80">
-              Seamless mobile experiences across platforms.
+              We design and develop high-quality mobile applications that
+              deliver smooth user experiences, high performance, and long-term
+              value. We bring your product idea to life across iOS and Android
+              platforms.
             </p>
           </div>
 
-          {/* Tech Consulting */}
+          {/* Outsorcing Partner*/}
           <div className="p-6 bg-[#2a2a30] rounded-lg shadow hover:scale-105 transition text-center">
             <FaTools className="text-4xl text-accent mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-accent">
-              Tech Consulting
+              Outsourcing Partner
             </h3>
             <p className="text-white/80">
-              Expert advice for your technology strategy.
+              Full stack development outsourcing services for startups, SMEs,
+              and tech companies looking to scale their digital products
+              efficiently and cost-effectively.
             </p>
           </div>
 
@@ -224,7 +233,10 @@ const HomePage = () => {
               User Experience (UX) Design
             </h3>
             <p className="text-white/80">
-              Creating intuitive, delightful user interfaces and flows.
+              We create intuitive, engaging, and human-centered digital
+              experiences that drive user satisfaction and business success. Our
+              UX design process is grounded in research, strategy, and
+              prototyping to help your product deliver real value.
             </p>
           </div>
 
@@ -235,7 +247,11 @@ const HomePage = () => {
               Custom Software Development
             </h3>
             <p className="text-white/80">
-              Tailored software built to your exact requirements.
+              We build tailored software solutions that align perfectly with
+              your business goals, workflows, and user needs. Whether you're
+              launching a new product or optimizing internal processes, our
+              custom development approach ensures flexibility, scalability, and
+              long-term success.
             </p>
           </div>
 
@@ -246,7 +262,10 @@ const HomePage = () => {
               Desktop App Development
             </h3>
             <p className="text-white/80">
-              Robust desktop applications for Windows, Mac, and Linux.
+              We design and build high-performance desktop applications tailored
+              to your business requirements. Whether you need offline
+              functionality, seamless hardware integration, or robust enterprise
+              software, our desktop apps are secure, efficient, and scalable.
             </p>
           </div>
         </div>
@@ -271,9 +290,9 @@ const HomePage = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
           Why Work With Us?
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
           {/* Left: Cards grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1 order-2 lg:order-1">
             <div className="flex flex-col items-center text-center bg-[#2a2a30] p-4 rounded-lg shadow">
               <FaClipboardList className="text-4xl text-accent mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">
@@ -337,11 +356,13 @@ const HomePage = () => {
           </div>
 
           {/* Right: Feature image */}
-          <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-lg">
-            <img
+          <div className="relative w-full lg:w-[500px] h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-lg flex-shrink-0 order-1 lg:order-2">
+            <Image
               src="/assets/feature.png"
               alt="Why Work With Us"
-              className="object-cover w-full h-full"
+              fill
+              className="object-cover"
+              priority
             />
           </div>
 
@@ -360,6 +381,10 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/*FORM*/}
+      <section id="contact-section">
+        <ContactForm />
+      </section>
       <Footer />
     </main>
   );
