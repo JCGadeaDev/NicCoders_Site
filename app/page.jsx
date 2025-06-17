@@ -33,13 +33,13 @@ const HomePage = () => {
           {/* Text */}
           <div className="text-center xl:text-left xl:flex-1 max-w-xl">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight text-white">
-              We Transform Ideas <br />
+             We Transform Ideas<br />
               <span className="text-accent-hover">
                 Into Innovative Software
               </span>
             </h1>
             <p className="text-white/80 mb-8">
-              At NicCoders, we turn your vision into impactful digital
+            At NicCoders, we turn your vision into impactful digital
               solutions. We are your trusted tech partner, specializing in
               custom software development to boost your business growth.
             </p>
@@ -92,7 +92,7 @@ const HomePage = () => {
           <div className="order-2">
             <h2 className="text-2xl font-semibold text-accent mb-2">Mission</h2>
             <p className="text-white/80 mb-4">
-              Facilitate digital transformation by developing innovative,
+             Facilitate digital transformation by developing innovative,
               high-quality software solutions tailored to clients&apos; unique
               needs. We are committed to delivering services and products that
               drive efficiency, productivity, and business success while
@@ -124,7 +124,7 @@ const HomePage = () => {
       {/* Core Values Section */}
       <section className="py-16 container">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
-          Our Core Values
+            Our Core Values
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Collaboration Card */}
@@ -190,7 +190,7 @@ const HomePage = () => {
           <div className="p-6 bg-[#2a2a30] rounded-lg shadow hover:scale-105 transition text-center">
             <FaLaptopCode className="text-4xl text-accent mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-accent">
-              Web App Development
+                  Web App Development
             </h3>
             <p className="text-white/80">
               We build high-performance, responsive, and scalable web
@@ -203,10 +203,10 @@ const HomePage = () => {
           <div className="p-6 bg-[#2a2a30] rounded-lg shadow hover:scale-105 transition text-center">
             <FaMobileAlt className="text-4xl text-accent mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-accent">
-              Mobile App Development
+               Mobile App Development
             </h3>
             <p className="text-white/80">
-              We design and develop high-quality mobile applications that
+             We design and develop high-quality mobile applications that
               deliver smooth user experiences, high performance, and long-term
               value. We bring your product idea to life across iOS and Android
               platforms.
@@ -220,7 +220,7 @@ const HomePage = () => {
               Outsourcing Partner
             </h3>
             <p className="text-white/80">
-              Full stack development outsourcing services for startups, SMEs,
+               Full stack development outsourcing services for startups, SMEs,
               and tech companies looking to scale their digital products
               efficiently and cost-effectively.
             </p>
@@ -230,7 +230,7 @@ const HomePage = () => {
           <div className="p-6 bg-[#2a2a30] rounded-lg shadow hover:scale-105 transition text-center">
             <FaPalette className="text-4xl text-accent mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-accent">
-              User Experience (UX) Design
+             User Experience (UX) Design
             </h3>
             <p className="text-white/80">
               We create intuitive, engaging, and human-centered digital
@@ -244,10 +244,10 @@ const HomePage = () => {
           <div className="p-6 bg-[#2a2a30] rounded-lg shadow hover:scale-105 transition text-center">
             <FaCode className="text-4xl text-accent mb-4" />
             <h3 className="text-xl font-semibold mb-2 text-accent">
-              Custom Software Development
+               Custom Software Development
             </h3>
             <p className="text-white/80">
-              We build tailored software solutions that align perfectly with
+               We build tailored software solutions that align perfectly with
               your business goals, workflows, and user needs. Whether you're
               launching a new product or optimizing internal processes, our
               custom development approach ensures flexibility, scalability, and
@@ -288,7 +288,7 @@ const HomePage = () => {
       {/* Why Work With Us Section */}
       <section className="py-16 container">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
-          Why Work With Us?
+           Why Work With Us?
         </h2>
         <div className="flex flex-col lg:flex-row gap-12 items-start">
           {/* Left: Cards grid */}
@@ -296,11 +296,11 @@ const HomePage = () => {
             <div className="flex flex-col items-center text-center bg-[#2a2a30] p-4 rounded-lg shadow">
               <FaClipboardList className="text-4xl text-accent mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">
-                Requirements & Analysis
+                 Requirements & Analysis
               </h3>
               <p className="text-white/80">
-                We deeply understand your needs and tailor solutions to your
-                project.
+                 We deeply understand your needs and tailor solutions to your
+                 project.
               </p>
             </div>
 
@@ -310,7 +310,7 @@ const HomePage = () => {
                 Design & Prototyping
               </h3>
               <p className="text-white/80">
-                We create visual prototypes for your approval.
+                  We create visual prototypes for your approval.
               </p>
             </div>
 
@@ -320,7 +320,7 @@ const HomePage = () => {
                 Development & Implementation
               </h3>
               <p className="text-white/80">
-                We build robust solutions and implement them efficiently.
+                 We build robust solutions and implement them efficiently.
               </p>
             </div>
 
@@ -347,10 +347,10 @@ const HomePage = () => {
             <div className="flex flex-col items-center text-center bg-[#2a2a30] p-4 rounded-lg shadow">
               <FaUsers className="text-4xl text-accent mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">
-                Our Team
+                 Our Team
               </h3>
               <p className="text-white/80">
-                Meet our talented, passionate experts who drive our success.
+                 Meet our talented, passionate experts who drive our success.
               </p>
             </div>
           </div>
