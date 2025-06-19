@@ -1,11 +1,8 @@
 import nodemailer from "nodemailer";
 
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ message: "Método no permitido" });
-  }
-
-  const { firstname, lastname, email, phone, service, message } = req.body;
+export async function POST(req) {
+  const body = await req.json();
+  const { firstname, lastname, email, phone, service, message } = body;
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -29,8 +26,12 @@ export default async function handler(req, res) {
       `,
     });
 
-    res.status(200).json({ message: "Correo enviado correctamente" });
+    return new Response(JSON.stringify({ message: "Correo enviado correctamente" }), {
+      status: 200,
+    });
   } catch (error) {
-    res.status(500).json({ message: "Error al enviar el correo", error });
+    return new Response(JSON.stringify({ message: "Error al enviar el correo", error }), {
+      status: 500,
+    });
   }
 }
