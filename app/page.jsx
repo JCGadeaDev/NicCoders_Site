@@ -23,7 +23,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 import Footer from "@/components/Footer";
-import ContactForm from "./contact/page";
+import ContactForm from "@/components/ContactForm";
 
 const HomePage = () => {
   return (
