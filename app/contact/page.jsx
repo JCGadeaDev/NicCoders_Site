@@ -80,7 +80,7 @@ export default function ContactForm() {
       <div className="container max-w-4xl mx-auto px-4">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-4 md:p-10 bg-[#27272c] rounded-xl min-h-[950px] justify-center">
           <h3 className="text-2xl md:text-4xl font-bold text-accent">
-            Let's work together
+            Let&apos;s work together
           </h3>
           <p className="text-white/70 text-sm md:text-lg leading-relaxed">
             Thank you for reaching out to us! Please fill out the form below

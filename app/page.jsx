@@ -248,7 +248,7 @@ const HomePage = () => {
             </h3>
             <p className="text-white/80">
                We build tailored software solutions that align perfectly with
-              your business goals, workflows, and user needs. Whether you're
+              your business goals, workflows, and user needs. Whether you&apos;re
               launching a new product or optimizing internal processes, our
               custom development approach ensures flexibility, scalability, and
               long-term success.
