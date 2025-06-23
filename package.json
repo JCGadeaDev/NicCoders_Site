@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "postbuild": "[ -d .next/standalone ] && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/ || echo 'Standalone build not found'",
     "start": "node .next/standalone/server.js",
     "lint": "next lint"
   },
